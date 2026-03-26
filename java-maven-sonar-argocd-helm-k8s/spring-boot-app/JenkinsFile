@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'sameerbehera/ultimate-cicd-pipeline:15'
+      image 'sameerbehera/ultimate-cicd:15'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
